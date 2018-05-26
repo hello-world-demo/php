@@ -1,0 +1,9 @@
+language: php
+
+
+script:
+# - php hello-time.php
+- |
+  /usr/bin/time --format '%M %S %U %I %O' php << EOT
+  echo 'hello';
+  EOT
